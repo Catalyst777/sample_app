@@ -1,10 +1,10 @@
 - Ruby on RailsのアプリケーションをAWSのECS、起動タイプはFargateを用いてサービスをコンテナ化し、ECS上で稼働させています。
   - これからやる事
-    - ELBによる冗長構成:異なるAZのパブリックサブネットにEC2インスタンスをそれぞれ1台づつ設置し、トラフィック分散を実施
-    - Auto Scaling
-    - Route53
-    - CloudFront
-    - SQS
-    - SES
-    - Lambda
-    - CloudFormation
+    - ①ELBによる冗長構成:異なるAZのパブリックサブネットにEC2インスタンスをそれぞれ1台づつ設置し、トラフィック分散を実施
+    - ②Auto Scaling:①で設定した2台のEC2インスタンスを対象にオートスケーリングが機能するように設計する
+    - ③Route53
+    - ④CloudFront
+    - ⑤SQS
+    - ⑥SES
+    - ⑦Lambda
+    - ⑧CloudFormation
